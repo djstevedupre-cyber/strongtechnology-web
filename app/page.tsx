@@ -311,43 +311,118 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA FINAL */}
-      <section
-        id="contacto"
-        className="border-t border-white/10 bg-[linear-gradient(180deg,#0a0a0a_0%,#121212_100%)]"
-      >
-        <div className="mx-auto max-w-5xl px-6 py-20 text-center lg:px-10">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-yellow-400">
-            Strong Technology
-          </p>
-          <h2 className="mt-4 text-3xl font-bold sm:text-5xl">
-            Tu evento merece verse, sonar y sentirse extraordinario
-          </h2>
-          <p className="mx-auto mt-6 max-w-3xl text-white/75 leading-8">
-            Llevamos cada producción a otro nivel con soluciones técnicas,
-            visuales y estructurales diseñadas para impactar, cumplir y dejar
-            una huella memorable en cada asistente.
-          </p>
+      {/* CONTACTO FINAL */}
+<section
+  id="contacto"
+  className="border-t border-white/10 bg-[linear-gradient(180deg,#050505_0%,#0b0f14_100%)]"
+>
+  <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
+    <div className="grid gap-8 lg:grid-cols-2">
+      {/* LADO IZQUIERDO */}
+      <div className="rounded-[28px] border border-cyan-400/20 bg-black/60 p-8 shadow-[0_0_40px_rgba(0,180,255,0.08)] backdrop-blur">
+        <p className="text-xs font-semibold uppercase tracking-[0.4em] text-cyan-300">
+          Contacto
+        </p>
 
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href="https://wa.me/573102175490?text=Hola%20Strong%20Technology,%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios."
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-full bg-yellow-400 px-8 py-4 font-semibold text-black transition hover:scale-[1.02] hover:bg-yellow-300"
-            >
-              Escríbenos por WhatsApp
-            </a>
+        <h2 className="mt-6 text-4xl font-extrabold leading-tight sm:text-5xl">
+          Hablemos de tu <br /> evento
+        </h2>
 
-            <a
-              href="tel:3102175490"
-              className="rounded-full border border-white/20 px-8 py-4 font-semibold text-white transition hover:border-yellow-400/50 hover:bg-white/5"
-            >
-              310 217 5490
-            </a>
-          </div>
+        <div className="mt-8 space-y-4">
+          <a
+            href="mailto:strongtechnology@gmail.com"
+            className="block text-2xl font-semibold text-cyan-300 underline underline-offset-4 transition hover:text-cyan-200"
+          >
+            strongtechnology@gmail.com
+          </a>
+
+          <a
+            href="https://wa.me/573102175490"
+            target="_blank"
+            rel="noreferrer"
+            className="block text-2xl font-semibold text-cyan-300 underline underline-offset-4 transition hover:text-cyan-200"
+          >
+            +57 310 217 5490
+          </a>
         </div>
-      </section>
-    </main>
+
+        <p className="mt-12 text-3xl font-bold leading-tight text-white">
+          O completa este <br /> formulario
+        </p>
+      </div>
+
+      {/* LADO DERECHO */}
+      <div className="rounded-[28px] border border-white/10 bg-[#0b0f14] p-6 shadow-[0_0_40px_rgba(0,0,0,0.25)] sm:p-8">
+        <form className="space-y-4">
+          <input
+            type="text"
+            placeholder="Nombre *"
+            className="w-full rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-white outline-none transition placeholder:text-white/45 focus:border-cyan-400/50"
+          />
+
+          <input
+            type="text"
+            placeholder="Empresa o marca"
+            className="w-full rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-white outline-none transition placeholder:text-white/45 focus:border-cyan-400/50"
+          />
+
+          <input
+            type="email"
+            placeholder="Correo electrónico *"
+            className="w-full rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-white outline-none transition placeholder:text-white/45 focus:border-cyan-400/50"
+          />
+
+          <input
+            type="tel"
+            placeholder="Número de teléfono *"
+            className="w-full rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-white outline-none transition placeholder:text-white/45 focus:border-cyan-400/50"
+          />
+
+          <textarea
+            placeholder="Cuéntanos más sobre tu evento *"
+            rows={5}
+            className="w-full rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-white outline-none transition placeholder:text-white/45 focus:border-cyan-400/50"
+          />
+
+          <div className="pt-2">
+            <p className="mb-3 text-sm font-medium text-white">
+              Prefiero que me contacten por:
+            </p>
+
+            <div className="grid gap-3 sm:grid-cols-3">
+              <label className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-sm text-white">
+                <input type="checkbox" className="h-4 w-4" />
+                WhatsApp
+              </label>
+
+              <label className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-sm text-white">
+                <input type="checkbox" className="h-4 w-4" />
+                Correo
+              </label>
+
+              <label className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-sm text-white">
+                <input type="checkbox" className="h-4 w-4" />
+                Llamada
+              </label>
+            </div>
+          </div>
+
+          <label className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-sm text-white">
+            <input type="checkbox" className="h-4 w-4" />
+            Autorizo el tratamiento de mis datos personales.
+          </label>
+
+          <button
+            type="submit"
+            className="mt-2 w-full rounded-full bg-cyan-400 px-6 py-4 font-semibold text-black transition hover:bg-cyan-300"
+          >
+            Enviar mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
   );
 }
